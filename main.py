@@ -20,9 +20,6 @@ MEDICAL_CODE_REGEX = r'^\d+$'  # Only numbers
 POSITIVE_INTEGER_REGEX = r'^[1-9]\d*$'  # Positive integers
 PHONE_NUMBER_REGEX = r'^\d{11}$'
 
-# URL صفحه وب
-url = "https://membersearch.irimc.org/list/council/%d8%aa%d9%87%d8%b1%d8%a7%d9%86/%d8%aa%d9%87%d8%b1%d8%a7%d9%86/%d8%af%da%a9%d8%aa%d8%b1%d8%a7%db%8c%20%d8%ad%d8%b1%d9%81%d9%87%e2%80%8c%d8%a7%db%8c%20%d8%af%d9%86%d8%af%d8%a7%d9%86%d9%be%d8%b2%d8%b4%da%a9%db%8c/"
-
 
 def get_doctor_data_from_website(url):
     response = requests.get(url)
